@@ -24,29 +24,30 @@ I plot the current wind speed against latitude.
 I plot today's maximum temperature against latitude. As I would expect, I see temperatures peaking near the equatore and decreasing towards each pole.
 ![lattem](https://user-images.githubusercontent.com/73863977/127946785-f15cf629-36da-435f-a4f4-1d9421e4c1ae.png)
 
-Now, I search for correlations between all of the variables. These are r values
+Now, I search for correlations between all of the variables. These are r values.
 ![image](https://user-images.githubusercontent.com/73863977/128100706-aad81ea2-4ef0-425d-a2c4-2851e5d34a11.png)
 
-
+I constructed a 8 plots breaking down the previous 4 scatter plots by hemisphere and adding linear regression lines to each. For each plot, one of the variables will be latitude.
+Here is the plot for maximum temperatures in the Northern Hemisphere. As I expected, temperatures decrease as latitude increases.
 ![image](https://user-images.githubusercontent.com/73863977/128100725-a86b7b2e-45fc-4160-bafa-bdb0605962ba.png)
 
-
+Here is the plot for maximum temperatures in the Southern Hemisphere. As I expected, temperatures increase as latitude increases.
 ![image](https://user-images.githubusercontent.com/73863977/128100744-2cd0f824-c8dc-43ed-8e72-f89a08c3b55b.png)
 
+Here is the plot for humidities in the Northern Hemisphere. As I expected, humidity decreases as latitude increases.
+![image](https://user-images.githubusercontent.com/73863977/128107116-90a6e855-72aa-417b-983c-8bd13b2128c0.png)
 
-![image](https://user-images.githubusercontent.com/73863977/128100780-cc2bc7b4-188e-494b-b8d0-da4b53d3f69e.png)
+Here is the plot for humidities in the Southern Hemisphere. As I expected, humidity increases as latitude increases.
+![image](https://user-images.githubusercontent.com/73863977/128107146-5e3789fb-1589-4b72-8326-8f8478df1839.png)
 
+Here is the plot for cloud cover in the Northern Hemisphere.
+![image](https://user-images.githubusercontent.com/73863977/128107180-c729ed52-25a1-4e82-9084-73938190ae9a.png)
 
-![image](https://user-images.githubusercontent.com/73863977/128100801-2218fe65-7beb-46f8-ac77-2c2b770a1eb6.png)
+Here is the plot for cloud cover in the Southern Hemisphere.
+![image](https://user-images.githubusercontent.com/73863977/128107206-acbf0e1b-e2fd-4594-843f-b0704b621f1f.png)
 
+Here is the plot for wind speeds in the Northern Hemisphere.
+![image](https://user-images.githubusercontent.com/73863977/128107228-7084e3c2-232a-429d-b49d-7671cca99404.png)
 
-![image](https://user-images.githubusercontent.com/73863977/128100823-3fb8cb5f-dac3-4650-99dc-7dd85d785e0d.png)
-
-
-![image](https://user-images.githubusercontent.com/73863977/128100844-5dc39de0-cd24-456a-a56f-fa110b98b3fc.png)
-
-
-![image](https://user-images.githubusercontent.com/73863977/128100873-74886500-9c8d-4b5c-aff3-8d2e0e71c033.png)
-
-
-![image](https://user-images.githubusercontent.com/73863977/128100891-75fc3f36-cc78-4955-9168-2e190f3a5b25.png)
+Here is the plot for wind speeds in the Southern Hemisphere.
+![image](https://user-images.githubusercontent.com/73863977/128107257-52cf0ee2-4015-4b57-957f-839969fa116c.png)
