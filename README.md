@@ -1,18 +1,18 @@
 # Plotting-Global-Weather-by-Latitude
-With this project, I visualized correlations between latitude, maximum temperature, % humidity, % cloud cover, and wind speed. I also sought visual insight into how these correlations differ between the northern and southern hemispheres. This project is for understanding global weather as it stands on the day that the code is run.
+With this project, I visualized correlations between latitude, maximum temperature, % humidity, % cloud cover, and wind speed. I also sought visual insight into how these correlations differ between the Northern and Southern Hemispheres. This project is for understanding global weather as it stands on the day that the code is run.
 
-To use my project, clone the repository to your computer, open the Today'sGlobalWeather.ipynb file in Jupyter Notebook, and press the play button next to each code block in sequence.
+To use my project, clone the repository to your computer, open the Today'sGlobalWeather.ipynb file in Jupyter Notebook, and press the play buttons next to each code block in sequence.
 
-After importing my dependencies, I generated a list of several hundred cities from around the world. I did this by generating pairs of random latitudes and longitudes, then using the citipy module to find the city closest to the point specified by the lat and lon numbers. Then, for each city in the list, I called the openweathermap.org API to get today's maximum temperature, % humidity, % cloud cover, and wind speed. In order not to lock myself out of the API by performing too many times each minute, I incorporated a time.sleep() line which caused my code to wait slightly more than a second before doing the next call. For each call, I used a try and except code chunk to check whether data actually existed for each city in the list before appending any data to my data lists. Because the cities are randomly selected, citipy sometimes approximates different points with the same city, and there is not always every desired piece of weather data for a given city, the number of data points obtained for each weather variable data list may differ each time the code is run. Here is the beginning of the list of 612 random cities:
+After importing my dependencies, I generated a list of several hundred cities from around the world. I did this by generating pairs of random latitudes and longitudes, then using the citipy module to find the city closest to the point specified by the lat and lon numbers. Then, for each city in the list, I called the openweathermap.org API to get today's maximum temperature, % humidity, % cloud cover, and wind speed. In order not to lock myself out of the API by performing too many times each minute, I incorporated a time.sleep() line which caused my code to wait slightly more than a second before doing the next call. For each call, I used a try and except code chunk to check whether data actually existed for each city in the list before appending any data to my data lists. The cities are randomly selected, citipy sometimes approximates different points with the same city, and there is not always every desired piece of weather data for a given city. For these 3 reasons, the number of data points obtained for each weather variable data list may differ each time the code is run. Here is the beginning of the list of random cities:
 ![image](https://user-images.githubusercontent.com/73863977/128100551-6969c275-b4bf-4d82-8388-976878e30e4c.png)
 
-I used a line of code to convert all the temperatures from openweathermap.org from Celsius to Fahrenheit, then displayed all of the weather data, including the Fahrenheit temperatures, in a dataframe. The beginning of that df is shown here. Notice that, as certain cities were evidently lacking data for one or some of the desired weather variables, there are only 558 rows here.
+I used a line of code to convert all the temperatures from openweathermap.org from Celsius to Fahrenheit, then displayed all of the weather data, including the Fahrenheit temperatures, in a dataframe. The beginning of that df is shown here. For the 3 reasons listed in the previous paragraph, you may find that there are fewer rows in the df than there were randomly chosen cities.
 ![image](https://user-images.githubusercontent.com/73863977/128100632-6d7784a9-2179-4663-bcc2-05f8eee684db.png)
 
-I run basic descriptive statistics on each of my variables: latitude, maximum temperatures, humidities, cloud covers, and wind speeds.
+I run basic descriptive statistics on each of my variables: latitudes, maximum temperatures, humidities, cloud covers, and wind speeds.
 ![image](https://user-images.githubusercontent.com/73863977/128100671-acd32cc4-bce5-42c5-bdca-183eedb97126.png)
 
-I plot today's maximum temperature against % cloud cover. 
+I plot today's % cloud cover against latitude. 
 ![latclo](https://user-images.githubusercontent.com/73863977/127946780-e5df5893-9961-4730-b985-84e73c91b05b.png)
 
 I plot the current humidity level against latitude.
@@ -27,7 +27,7 @@ I plot today's maximum temperature against latitude. As I would expect, I see te
 Now, I search for correlations between all of the variables. These are r values.
 ![image](https://user-images.githubusercontent.com/73863977/128100706-aad81ea2-4ef0-425d-a2c4-2851e5d34a11.png)
 
-I constructed a 8 plots breaking down the previous 4 scatter plots by hemisphere and adding linear regression lines to each. For each plot, one of the variables will be latitude.
+I constructed 8 plots breaking down the previous 4 scatter plots by hemisphere and adding linear regression lines to each. For each plot, one of the variables will be latitude.
 Here is the plot for maximum temperatures in the Northern Hemisphere. As I expected, temperatures decrease as latitude increases.
 ![image](https://user-images.githubusercontent.com/73863977/128100725-a86b7b2e-45fc-4160-bafa-bdb0605962ba.png)
 
