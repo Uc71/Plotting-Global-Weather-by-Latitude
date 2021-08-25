@@ -21,7 +21,7 @@ I plot the current humidity level against latitude.
 I plot the current wind speed against latitude.
 ![latspe](https://user-images.githubusercontent.com/73863977/127946783-42c75812-bdb5-49ba-9ff5-e87f58e912ea.png)
 
-I plot today's maximum temperature against latitude. As I would expect, I see temperatures peaking near the equatore and decreasing towards each pole.
+I plot today's maximum temperature against latitude. As I would expect, I see temperatures peaking near the equator and decreasing towards each pole.
 ![lattem](https://user-images.githubusercontent.com/73863977/127946785-f15cf629-36da-435f-a4f4-1d9421e4c1ae.png)
 
 Now, I search for correlations between all of the variables. These are r values.
